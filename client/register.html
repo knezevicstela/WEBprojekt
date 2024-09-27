@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registracija</title>
+  <style>
+    .inputBox { margin-bottom: 10px; }
+    input { width: 100%; padding: 10px; margin: 5px 0; }
+    .btn { background-color: orange; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+    .register-form { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 30px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); z-index: 1000; }
+    .fa-times { cursor: pointer; float: right; }
+    .overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 999; }
+  </style>
+</head>
+<body>
+  <!-- Register forma -->
+  <div class="register-form">
+    <i class="fas fa-times" id="register-close"></i> <!-- X gumb za vraćanje na homepage -->
+
+    <form id="register-user-form">
+      <h3>Registracija</h3>
+      <div class="inputBox">
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Lozinka" required>
+      </div>
+      <input type="submit" class="btn" value="Registriraj se">
+    </form>
+  </div>
+
+  <script>
+    // Zatvaranje register forme i vraćanje na homepage
+    document.getElementById('register-close').addEventListener('click', function() {
+      window.location.href = 'homepage.html';  // Povratak na početnu stranicu
+    });
+
+    // Slanje podataka za registraciju
+    document.getElementById('register-user-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const email = document.getElementById('register-email').value;
+      const password = document.getElementById('register-password').value;
+
+      try {
+        const response = await fetch('http://localhost:5000/api/users/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password })
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.message || 'Greška pri registraciji');
+        }
+
+        if (result.success) {
+          alert('Registracija uspješna! Preusmjeravam vas na početnu stranicu.');
+          window.location.href = 'homepage.html';  // Povratak na početnu stranicu nakon registracije
+        }
+      } catch (error) {
+        console.error('Greška pri registraciji:', error);
+        alert(`Greška pri registraciji: ${error.message}`);
+      }
+    });
+  </script>
+</body>
+</html>

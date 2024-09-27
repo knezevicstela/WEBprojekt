@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<offer_sheet> 
+    <offer> 
+        <duration>4. - 8. srpnja</duration>
+        <discount>25%</discount>
+
+    </offer>
+    <offer> 
+        <duration>12. - 20. srpnja</duration>
+        <discount>15%</discount>
+
+    </offer>
+    <offer> 
+        <duration>1. - 4. kolovoza</duration>
+        <discount>10%</discount>
+
+    </offer>
+    <offer> 
+        <duration>13. - 16. kolovoza</duration>
+        <discount>30%(vrijedi samo u Hrvatskoj)</discount>
+
+    </offer>
+    <offer> 
+        <duration>10. - 17. rujna</duration>
+        <discount>20%</discount>
+
+    </offer>
+</offer_sheet>

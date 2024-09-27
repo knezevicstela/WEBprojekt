@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaš Salon | Izaberi salon ovdje!</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>Online</span>Salon</a>
+
+    <nav class="navbar">
+        <a href="#home">Početna</a>
+        <a href="#book">Naruči se</a>
+        <a href="#packages">Suradnici</a>
+        <a href="#services">Usluge</a>
+        <a href="list.html">Ponude</a>
+        <a href="#review">Recenzije</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn" onclick="showSearch()"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" onkeyup="searchFilter()" placeholder="Unesi grad, državu ili ime salona" onclick="searchList()">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+    <ul id="search-list">
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://maps.app.goo.gl/2822fEgSXmr1twLM7"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Salon ljepote za žene, Osijek <i class="address-store">(Europska avenija 123, Osijek, Hrvatska)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/MgZFS1fnLFexvujA9"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Hoala Salon & Spa, Honolulu <i class="address-store">(1450 Ala Moana Blvd, Honolulu, HI 96814, United States)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/gHBPx9fDxaF2NrjD9"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>L'Etoile Elite, King St <i class="address-store">(Suite 4, 130 Pitt Street, City, Sydney. 2000 Corner of Pitt St and, King St...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/balmainhairsalon?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Balmain Hair Salon <i class="address-store">(2 Rue Scribe, 75009 Paris, France)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/sozohair?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>SOZO Hair & Make Tokyo <i class="address-store">(Japan, 〒150-0001 Tokyo, Shibuya City, Jingumae, 4 Chome−25−1 B1F)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/cz9NbYz7nfiLWb1A8"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Salon V <i class="address-store">(10 E 8th St, New York, NY 10003, United States)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/LooksCivilLines?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Looks Salon <i class="address-store">(6, Sham Nath Marg, opposite Maidens Hotel, Ludlow Castle, Civil Lines, New Delhi...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/31HNuAdwZomcLBxj9"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Le Salon UK, Stockwell <i class="address-store">(77 Stockwell Rd, London SW9 9PY, United Kingdom)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/Bersen_na_Yakimanke?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Salon Krasoty Bersen <i class="address-store">(Serafimovicha Ulitsa, 2, 3 Etazh, Moscow, Russia, 119072)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/benjaminsalonla?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Benjamin Salon West Hollywood <i class="address-store">(8910 Melrose Ave, West Hollywood, CA 90069, United States)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/ipanema-salon-rio?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Ipanema Salon Rio <i class="address-store">(Rua Sousa Lima, 65 - Loja A - Copacabana, Rio de Janeiro - RJ, 22081-010, Brazil)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/spCaW9nNfCSWvm3w9"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Friseur SHAG <i class="address-store">(Theresienstraße 128, 80333 München, Germany)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/PonyUpSalon-Laketown?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>PonyUp Salon <i class="address-store">(716, Lake Town Rd, Between Jaya Cinema & Spencers, Block A, Lake Town, Kolkata...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/C4RP3Sinv6QPCdW87"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Tarra's Salon, South Jakarta <i class="address-store">(Jl. Benda No.1, RT.5/RW.4, Cilandak Tim., Kec. Ps. Minggu, Kota Jakarta...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/upiDLXtqnkiT7hkY8"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>SHISEIDO BEAUTY SALOON <i class="address-store">(Japan, 〒542-8501 Osaka, Chuo Ward, Shinsaibashisuji, 1 Chome−7−1...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/wtrRUzageGmXR178A"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Biyang Bense Hair Salon <i class="address-store">(8 Jianguomen Inner St, Dongcheng, Beijing, China)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/CMvhFMwF1kMFcpyP7"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>EdwardsAndCo Melbourne <i class="address-store">(1/22 Punch Ln, Melbourne VIC 3000, Australia)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/ESHKNeukolln?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>ESHK Friseur Neukölln <i class="address-store">(Thomasstraße 11, 12053 Berlin, Germany)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/gPqrHkja4Cce8ocK6"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Toi Beauty Salon <i class="address-store">(75 El-Nozha, Almazah, Heliopolis, Cairo Governorate, Egypt)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/jusnaturalja?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Jus Natural Hair Studio <i class="address-store">(38 Trafalgar Rd, Kingston, Jamaica)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/t1e7ACo3KBrzXUzy5"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Tony Shamas Hair & Laser <i class="address-store">(81 Jarvis St, Toronto, ON M5C 2H4, Canada)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/vyk3vGyb4FbY3S5G8"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Bounce Salon & Spa <i class="address-store">(#610, 12th Main Rd, Opp. SBI, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka...)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/Georgemarcussalonmadrid?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>GEORGE MARCUS SALON MADRID <i class="address-store">(Calle de Quintana, 3, 28008 Madrid, Spain)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/SZ77S5icYE2m9GsB6"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>La Maison Amsterdam <i class="address-store">(Rozengracht 215, 1016 LZ Amsterdam, Netherlands)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/salondebeaute-milano-duomo?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Salon de Beauté <i class="address-store">(Via Victor Hugo, 4, 20123 Milano MI, Italy)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/Un4u7nHJLAzeHMoj7"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Bono Salon <i class="address-store">(870 Wuding Rd, Jing'an District, Shanghai, China)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/RamiJabaliSalon?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Rami Jabali Hair Salon <i class="address-store">(W Hotel Palm Jumeirah, West Crescent - Dubai - United Arab Emirates)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/nailbar-roma?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Nailbar Gamax <i class="address-store">(Via della Vite, 39/a, 00187 Roma RM, Italy)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/AradiseHair?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Aradise Hair Salon <i class="address-store">(125 St Georges Terrace, Perth WA 6000, Australia)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/EnviSalonVimanNagar?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Envi Salon and Spa <i class="address-store">(Phoenix Road, Clover Park, Viman Nagar, Pune, Maharashtra 411014)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://goo.gl/maps/xzBjGLi2C7o4KSWB8"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Logan 14 Aveda Salon & Spa <i class="address-stored">(1314 14th St NW, Washington, DC 20005, United States)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/spoiltsalon?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Spoilt Hair Salon, Kloof St <i class="address-stored">(Lifestyle On Kloof, 56 Kloof St, CBD, Cape Town, 8001, South Africa)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+        <li>
+            <div class="list-item">
+            <div class="item-info">
+                <h2><a href="https://g.page/Joao-Hairmonia?share"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Hairmonia Perruqueries <i class="address-stored">(Carrer de Còrsega, 393, 08037 Barcelona, Spain)</i></a></h2>
+                <div class="price" style="font-size: 2.5rem;">€90.00</div>
+            </div>
+            <div class="buy-now">
+                <a href="#book" class="btn">Rezerviraj!</a>
+            </div>
+        </div>
+        </li>
+    </ul>
+
+    
+</header>
+
+<!-- Offer list-->
+<div id='offer-sheet' align="center">
+    <i class="fas fa-times" id="list-close"></i>
+    <table id='offer_sheet'>
+        <thead>
+            <tr>
+                <td>Datum</td>
+                <td>Ponuda</td>
+            </tr>                
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+ <!-- Button za otvaranje login forme -->
+ <i class="fas fa-user" id="login-btn"></i>
+
+ <!-- Overlay za tamnu pozadinu -->
+ <div class="overlay" id="overlay"></div>
+
+ <!-- Login forma -->
+ <div class="login-form" id="login-form">
+    <i class="fas fa-times" id="login-close"></i>
+   <form id="login-user-form">
+     <h3>Prijava</h3>
+     <div class="inputBox">
+       <input type="email" id="email" placeholder="Email" required>
+       <input type="password" id="password" placeholder="Lozinka" required>
+     </div>
+     <input type="submit" class="btn" value="Prijavi se">
+     <p>Nemaš račun? <a href="register.html">Registriraj se</a></p> <!-- Link koji vodi na register.html -->
+   </form>
+ </div>
+
+ <script>
+   // Prikazivanje login forme
+   document.getElementById('login-btn').addEventListener('click', function() {
+     document.getElementById('login-form').style.display = 'block';
+     document.getElementById('overlay').style.display = 'block'; // Prikazivanje tamne pozadine
+   });
+
+    // Zatvaranje login forme i vraćanje na početnu stranicu
+    document.getElementById('login-close').addEventListener('click', function() {
+      document.getElementById('login-form').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none'; // Sakrij overlay
+    });
+
+   // Slanje podataka za login
+   document.getElementById('login-user-form').addEventListener('submit', async function(event) {
+     event.preventDefault();
+
+     const email = document.getElementById('email').value;
+     const password = document.getElementById('password').value;
+
+     try {
+       const response = await fetch('http://localhost:5000/api/users/login', {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({ email, password })
+       });
+
+       const result = await response.json();
+
+       if (!response.ok) {
+         throw new Error(result.message || 'Greška pri prijavi');
+       }
+
+       if (result.success) {
+         localStorage.setItem('token', result.token);
+         alert('Prijava uspješna! Preusmjeravanje na početnu stranicu.');
+         window.location.href = 'homepage.html';  // Preusmjeravanje nakon prijave
+       }
+     } catch (error) {
+       console.error('Greška pri prijavi:', error);
+       alert(`Greška pri prijavi: ${error.message}`);
+     }
+   });
+ </script>
+
+</div>
+
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Najbolje mjesto za pronalazak idealnog salona</h3>
+        <p>Dajemo ti uvid u najbolje salone na svijetu!</p>
+        <a href="#packages" class="btn">Klikni ovdje</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-1.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-3.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>N</span>
+        <span>A</span>
+        <span>R</span>
+        <span>U</span>
+        <span>Č</span>
+        <span>I</span>
+        <span class="space"></span>
+        <span>S</span>
+        <span>E</span>
+
+    </h1>
+
+    <div class="row">
+
+        <div class="image" id="buy-now-img">
+            <img src="images/kisspng-beauty-parlour-day-spa-cosmetics-vector-graphics-ampquot-5cca94ef1d4c66.91900722155678027112.png" alt="">
+        </div>
+
+        <form id="booking-form">
+            <div class="inputBox">
+                <h3>E-mail</h3>
+                <input type="text" id = "mail" placeholder="Vaš email" required>
+            </div>
+            <div class="inputBox">
+                <h3>Datum</h3>
+                <input type="date" id = "date" required>
+            </div>
+            <div class="inputBox">
+                <h3>Što vam treba?</h3>
+                <input type="text" id = "service" placeholder="Vrsta usluge">
+            </div>
+
+            <input type="submit" class="btn" value="Rezerviraj odmah">
+        </form>
+
+       <script>
+            document.getElementById('booking-form').addEventListener('submit', async function(event) {
+                event.preventDefault();
+
+                const mail = document.getElementById('mail').value;
+                const date = document.getElementById('date').value;
+                const service = document.getElementById('service').value;
+
+                try {
+                    const response = await fetch('http://localhost:5000/api/bookings', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            mail : mail, 
+                            date: date,
+                            service: service
+           
+                        })
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        alert('Rezervacija uspješno kreirana!');
+                    } else {
+                        alert('Greška pri kreiranju rezervacije.');
+                    }
+                } catch (error) {
+                    console.error('Greška:', error);
+                    alert('Došlo je do greške pri kreiranju rezervacije.');
+                }
+            });
+        </script>
+
+    </div>
+
+</section>
+
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>A</span>
+        <span>L</span>
+        <span>O</span>
+        <span>N</span>
+        <span>I</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="https://maps.app.goo.gl/fVgmAb8t8c3Ryqdt7"><img src="https://image3.mouthshut.com/images/imagesp/925738494s.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Osijek </h3>
+                <p>Salon za ljepotu za žene</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://goo.gl/maps/RYqQ6B122EJ9Xy4bA"><img src="https://i0.wp.com/professionalbeauty.in/wp-content/uploads/2021/03/PB-Business-Story.jpg?fit=546%2C364&ssl=1" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hawaii </h3>
+                <p>Hoala Salon & Spa, Honolulu</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://goo.gl/maps/pHvEjcnoDLVhoxYe6"><img src="http://www.letoileelite.com.au/mysiteadmin/gallery_images/1721742572img3.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Sydney </h3>
+                <p>L'Etoile Elite, King St</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://g.page/balmainhairsalon?share"><img src="https://salon-media.s3.ca-central-1.amazonaws.com/wp-content/uploads/2019/05/may_interiorFRmain1.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Paris </h3>
+                <p>Balmain Hair Salon</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://g.page/sozohair?share"><img src="https://www.intheluggage.com/wp-content/uploads/sites/2/2017/02/sozo1-710x475.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Tokyo </h3>
+                <p>SOZO Hair & Make Tokyo, Shibuya</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="https://goo.gl/maps/DYS21D45bSpajWSm7"><img src="https://i.pinimg.com/originals/57/d3/54/57d354298b144df3b8433a0df3cd7d18.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> New York </h3>
+                <p>Salon Salon V, New York</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://g.page/LooksCivilLines?share"><img src="https://images.jdmagicbox.com/comp/delhi/z7/011pxx11.xx11.160623075947.e3z7/catalogue/looks-salon-noida-sector-18-noida-beauty-parlours-f9ywkj5iol.jpg?clr=#333333" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Delhi </h3>
+                <p>Looks Salon, Civil Lines</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/31HNuAdwZomcLBxj9"><img src="https://cdn1.treatwell.net/images/view/v2.i1719881.w1080.h720.x9782E2C9/" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> London </h3>
+                <p>Le Salon UK, Stockwell</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/Bersen_na_Yakimanke?share"><img src="7_.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Moscow </h3>
+                <p>Salon Krasoty Bersen, Etazh</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://g.page/benjaminsalonla?share"><img src="https://www.benjaminsalon.com/wp-content/uploads/2020/10/benjamin-salon-west-hollywood-01-2020.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Los Angeles </h3>
+                <p>Benjamin Salon West Hollywood</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/ipanema-salon-rio?share"><img src="https://djnn6j6gf59xn.cloudfront.net/Content/upload/img/p_foto/790x550/p_foto_000340456.jpg?v=20210209102800" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rio de Janerio </h3>
+                <p>Ipanema Salon Rio</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/HnwTVLKryX8D94P28"><img src="https://fastly.4sqi.net/img/general/200x200/26688161_sDrYM5zzqCLNTyqKmB5qzGHhhY3d4t58tU6p_kqDZuU.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Munich </h3>
+                <p>Friseur SHAG</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://g.page/PonyUpSalon-Laketown?share"><img src="https://lh3.googleusercontent.com/DNOpaHI0jts1X08OYJXrzqAy3kK2J_viFXjaQqics5tLQuj0zQ7HJ3Sg7DTYP7b7hqyrDKrBsmUmEAuHhdqAlHkEDvY=w1000" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kolkata </h3>
+                <p>PonyUp Salon, Lake Town</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/Jc4XfHjJ2NLsmtuF7"><img src="https://indonesiaexpat.id/wp-content/uploads/2018/10/20180802_1351140-e1607667332606.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Jakarta </h3>
+                <p>Tarra's Salon, South Jakarta</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/BHzNU2BSB4dDW9886"><img src="https://www.hpcimedia.com/images/website/ManChemNews/DIR_45/F_34018.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Osaka </h3>
+                <p>SHISEIDO BEAUTY SALOON</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/WeHbpoykcBEQFS4Y7"><img src="https://d2jz4nqvi4omcr.cloudfront.net/Blogs/Hairsalonsdelhigeetanjali.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Beijing </h3>
+                <p>Biyang Bense Hair Salon</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/tdhZKCecAnvmba4A6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBtO-4Slqa_pZAWi6Cbvl_i_8wlTVn76wguOxr-rZhNt-njEv8TWZszZMpkIyR7HDdN4U&usqp=CAU" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Melbourne </h3>
+                <p>EdwardsAndCo Melbourne</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/ESHKNeukolln?share"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFp1U2xoJtZSz_38axYXRd3aIOEKrbC7Grtg&usqp=CAU" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Berlin </h3>
+                <p>ESHK Friseur Neukölln</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/ZwndE2KkBEZFKwt76"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWBYWQ4ewIVvYm7TL2jooZJuvTw2b1CHXiOdo4bKEbO1KnTTv8_GWzVAL7KCsIA8bCNI&usqp=CAU" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Cairo </h3>
+                <p>Toi Beauty Salon, El-Nozha</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/jusnaturalja?share"><img src="https://nestia-food.obs.ap-southeast-3.myhuaweicloud.com/201612/29/817e8d0e40635ee4d41be330ce481968.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kingston </h3>
+                <p>Jus Natural Hair Studio</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/HHjqrzfRQioxPWTo7"><img src="https://tonyshamas.ca/hair_salon/wp-content/uploads/2014/12/3_styling_area_hair_salon_toronto_tony_shamas_hair_laser_downtown_jarvis.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Toronto </h3>
+                <p>Tony Shamas Hair & Laser</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/hqSRb9NZsWBtg6Ds8"><img src="https://www.texcial.com/wp-content/uploads/2020/07/awdf.jpeg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Bangalore </h3>
+                <p>Bounce Salon & Spa, Indiranagar</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/Georgemarcussalonmadrid?share"><img src="https://georgemarcussalon.es/wp-content/uploads/2018/12/salon_5.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Madrid </h3>
+                <p>GEORGE MARCUS SALON MADRID</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/WHa1giuDvYPmpU7BA"><img src="https://lamaison-amsterdam.nl/wp-content/uploads/2019/03/la-maison-3-1.png" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Amsterdam </h3>
+                <p>La Maison Amsterdam</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://g.page/salondebeaute-milano-duomo?share"><img src="https://www.hand-factory.com/wp-content/uploads/2020/05/1-1024x683.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Milan </h3>
+                <p>Salon de Beauté</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/1dq6r8qh71kUFM367"><img src="https://fastly.4sqi.net/img/general/600x600/5046951_plbekq_aQNVqjZemeMzsgch2aDtbKKPxxYeOoMvFrkU.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Shanghai </h3>
+                <p>Bono Salon</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/RamiJabaliSalon?share"><img src="https://trevorsorbie.com/wp-content/uploads/2019/03/Trevor_Sorbie_Dubai_3-1024x724.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Dubai </h3>
+                <p>Rami Jabali Hair Salon</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/EtQjgFthe8BJCrUY8"><img src="https://i.pinimg.com/originals/14/36/f9/1436f9b35b3cc076d8789f54679bdc0e.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rome </h3>
+                <p>Nailbar Gamax</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/AradiseHair?share"><img src="https://i.pinimg.com/originals/a0/f3/e2/a0f3e21634a50fe5f7083ae2bd38ab96.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Perth </h3>
+                <p>Aradise Hair Salon</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/EnviSalonVimanNagar?share"><img src="https://content3.jdmagicbox.com/comp/mumbai/u3/022pxx22.xx22.110125142740.x5u3/catalogue/envi-salon-and-spa-inorbit-mall-malad-west-mumbai-beauty-spas-c02z3qinve-250.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Pune </h3>
+                <p>Envi Salon and Spa, Viman Nagar</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+
+        <div class="box load-more">
+            <a href="https://goo.gl/maps/1xX7ePWa8dsYCU5U6"><img src="https://s3-media3.fl.yelpcdn.com/bphoto/xhWcCI9m7N3bktUVEKg5iw/348s.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Washington d.c. </h3>
+                <p>Logan 14 Aveda Salon & Spa</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/spoiltsalon?share"><img src="https://www.lifestyleonkloofct.co.za/wp-content/uploads/2020/09/Spoilt-Hair-1-1200x654.jpg" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Cape Town </h3>
+                <p>Spoilt Hair Salon, Kloof St</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        <div class="box load-more">
+            <a href="https://g.page/Joao-Hairmonia?share"><img src="https://lh5.googleusercontent.com/p/AF1QipMnQe1yhxSuRhmHexHFB_wP_mDNK44Vk_0Dmn-8=w408-h306-k-no" alt=""></a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Barcelona </h3>
+                <p>Hairmonia Perruqueries, Barcelona</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> €90.00 <span>€120.00</span> </div>
+                <a href="#book" class="btn">Rezerviraj</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <h2 onclick="loadMore()" id="load-more">Učitaj još ... </h2>
+
+</section>
+
+
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>U</span>
+        <span>S</span>
+        <span>L</span>
+        <span>U</span>
+        <span>G</span>
+        <span>E</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>PRIUŠTIVI HOTELI</h3>
+
+        </a>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>HRANA I PIĆE</h3>
+
+        </a>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>VODIČ</h3>
+
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>OKO SVIJETA</h3>
+
+            </a>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>NAJBRŽI LETOVI</h3>
+            </a>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>AVANTURE</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>C</span>
+        <span>E</span>
+        <span>N</span>
+        <span>Z</span>
+        <span>I</span>
+        <span>J</span>
+        <span>E</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/Boy4.jpg" alt="">
+                    <h3>Ana Anić</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Temporibus accusantium, tempora voluptas quisquam quas dolorem, odit, aspernatur sint rem ex quaerat sit unde sed nisi tempore voluptate animi ea minima.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/Boy2.jpg" alt="">
+                    <h3>Iva Ivić</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur rem deserunt incidunt quas necessitatibus nesciunt eveniet saepe! 
+                        Voluptas eius deleniti quod adipisci possimus! Nemo omnis itaque placeat illum quas tempora!
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/saket.jpg" alt="">
+                    <h3>Ivo Ivić</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates aperiam beatae sunt amet numquam voluptatum laborum aliquam
+                         laudantium dicta consequatur illum ipsum molestiae fugiat ipsa labore exercitationem, nesciunt saepe quia.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/Boy3.jpg" alt="">
+                    <h3>Ono Oko</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis, tempora laborum numquam quasi corporis maiores tenetur qui, 
+                        quidem molestias illum commodi similique! Rem aliquam voluptate quaerat dolor voluptatem eveniet.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>k</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>k</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image" id="contact-img">
+            <img src="images/ClipartKey_3249044.png" alt="">
+        </div>
+
+        <form id="contact-form">
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Ime" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="inputBox">
+                <input type="tel" id="number" placeholder="Broj telefona" required>
+            </div>
+            <textarea id="message" placeholder="Poruka" cols="30" rows="10" required></textarea>
+            <input type="submit" class="btn" value="Pošalji poruku">
+        </form>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', async function(event) {
+                event.preventDefault();  // Sprječava ponovno učitavanje stranice
+    
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const number = document.getElementById('number').value;
+                const message = document.getElementById('message').value;
+    
+                // Slanje podataka na backend koristeći fetch API
+                try {
+                    const response = await fetch('http://localhost:5000/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            name : name,
+                            email : email,
+                            number : number,
+                            message : message
+                        })
+                    });
+    
+                    const result = await response.json();
+    
+                    if (result.success) {
+                        alert('Poruka uspješno poslana!');
+                    } else {
+                        alert('Greška pri slanju poruke.');
+                    }
+                }   catch (error) {
+                    console.error('Greška:', error);
+                    alert('Došlo je do greške pri slanju poruke.');
+                }
+            });
+        </script>
+
+    </div>
+
+
+    
+</section>
+
+<section class="brand-container">
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>O nama</h3>
+            <p>OnlineSalon je web aplikacija za traženje najboljeg salona za vas! </p>
+
+        </div>
+        <div class="box">
+            <h3>Popularne lokacije salona</h3>
+            <a href="#">Hrvatska</a>
+            <a href="#">SAD</a>
+            <a href="#">Japan</a>
+            <a href="#">Francuska</a>
+        </div>
+        <div class="box">
+            <h3>Linkovi</h3>
+            <a href="#home">Home</a>
+            <a href="#book">Rezerviraj</a>
+            <a href="#branches">Suradnici</a>
+            <a href="#services">Usluge</a>
+            <a href="#review">Recenzije</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+        <div class="box">
+            <h3>Zaprati nas!</h3>
+            <a href="https://www.facebook.com/">facebook</a>
+            <a href="https://www.instagram.com/">instagram</a>
+            <a href="https://www.twitter.com/">twitter</a>
+            <a href="https://in.linkedin.com/">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> SK </span>
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
